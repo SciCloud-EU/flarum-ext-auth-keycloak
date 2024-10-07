@@ -1,5 +1,5 @@
 {
-    "name": "spookygames/flarum-ext-auth-keycloak",
+    "name": "scicloud-eu/flarum-ext-auth-keycloak",
     "description": "Allow users to sign in/up/out with Keycloak.",
     "type": "flarum-extension",
     "keywords": ["authentication"],
