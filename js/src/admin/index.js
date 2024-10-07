@@ -1,11 +1,11 @@
 import app from 'flarum/app';
 
-const settingsPrefix = 'spookygames-auth-keycloak.';
+const settingsPrefix = 'scicloud-eu-auth-keycloak.';
 const translationPrefix = 'flarum-ext-auth-keycloak.admin.keycloak_settings.';
 
-app.initializers.add('spookygames-auth-keycloak', app => {
+app.initializers.add('scicloud-eu-auth-keycloak', app => {
   app.extensionData
-    .for('spookygames-auth-keycloak')
+    .for('scicloud-eu-auth-keycloak')
     .registerSetting(
       {
         setting: settingsPrefix + 'keycloak_version',

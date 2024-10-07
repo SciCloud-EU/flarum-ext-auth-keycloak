@@ -1,7 +1,7 @@
 <?php
 
-use SpookyGames\Auth\Keycloak\KeycloakAuthController;
-use SpookyGames\Auth\Keycloak\Listener;
+use SciCloudEU\Auth\Keycloak\KeycloakAuthController;
+use SciCloudEU\Auth\Keycloak\Listener;
 use Illuminate\Events\Dispatcher;
 use Flarum\Extend;
 
@@ -20,7 +20,7 @@ return [
         ->subscribe(Listener\AddLogoutRedirect::class),
 
     (new Extend\Settings)
-      ->serializeToForum('spookygames-auth-keycloak.delegate_avatars', 'spookygames-auth-keycloak.delegate_avatars', 'boolVal', false),
+      ->serializeToForum('scicloud-eu-auth-keycloak.delegate_avatars', 'scicloud-eu-auth-keycloak.delegate_avatars', 'boolVal', false),
 
     new Extend\Locales(__DIR__.'/locale'),
 ];
